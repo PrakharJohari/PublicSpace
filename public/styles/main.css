@@ -1,0 +1,134 @@
+/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ff9800; /* Changed background color to orange */
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Light black with sky stars pattern */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    animation: fadeIn 1s ease-in;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #000000; /* Changed header background to black */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Create Page Stylish Fonts */
+.create-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 48px; /* Increased font size */
+    font-weight: bold;
+    color: #f8b400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.create-label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: #ffffff;
+}
+
+.create-input, .create-textarea {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    color: #333;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #f8b400;
+    transition: all 0.3s ease-in-out;
+}
+
+.create-input:focus, .create-textarea:focus {
+    border-color: #ffcc29;
+    box-shadow: 0 0 10px rgba(255, 204, 41, 0.7);
+}
+
+/* Form Styles */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #f8b400;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #ff9800;
+}
+
+.btn-warning {
+    background: #ffcc29;
+    border: none;
+    color: #333;
+}
+
+.btn-warning:hover {
+    background: #e6b800;
+}
+
+.btn-danger {
+    background: #e63946;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+}
+
+.nav.justify-content-center li {
+    margin: 0 30px; /* Adjust this value for more spacing */
+  }
+  
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
